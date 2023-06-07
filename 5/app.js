@@ -3,8 +3,7 @@
 // "I was pressed!", при наведенні на кнопку виводитиме повідомлення "Mouse on me!",
 // а при відведенні курсора миші виводитиме повідомлення "Mouse is not on me!".
 const btn = document.querySelector("button");
-const text = document.createElement("th");
-text.appendChild.btn;
+const text = document.createElement("span");
 btn.addEventListener("click", function (event) {
   text.innerHTML = "I was pressed!";
 });
