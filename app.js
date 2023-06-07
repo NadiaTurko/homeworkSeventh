@@ -26,6 +26,9 @@ const changeResize = setTimeout(() => {
 //         <button . . . . . >Change style!</button>
 // </div>
 
+
+// напишіть функцію changeCSS(), яка спрацьовуватиме по кліку на кнопку і змінюватиме стиль вмісту тега <p>:
+//  колір шрифту – оранжевий, розмір шрифту 20px, шрифт сімейства "Comic Sans MS".
 function changeCSS() {
   const text = document.getElementById("text");
   console.log(text);
@@ -33,9 +36,6 @@ function changeCSS() {
   text.style.fontSize = "55px";
   text.style.fontFamily = "Comic Sans MS";
 }
-
-// напишіть функцію changeCSS(), яка спрацьовуватиме по кліку на кнопку і змінюватиме стиль вмісту тега <p>:
-//  колір шрифту – оранжевий, розмір шрифту 20px, шрифт сімейства "Comic Sans MS".
 
 // 7-3.
 // Задано сторінку з 3 кнопками і 1 лінкою. Напишіть Javascript код і реалізуйте HTML-сторінку з відповідними подіями на кожному елементові:
