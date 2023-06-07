@@ -26,6 +26,14 @@ const changeResize = setTimeout(() => {
 //         <button . . . . . >Change style!</button>
 // </div>
 
+function changeCSS() {
+  const text = document.getElementById("text");
+  console.log(text);
+  text.style.color = "orange";
+  text.style.fontSize = "55px";
+  text.style.fontFamily = "Comic Sans MS";
+}
+
 // напишіть функцію changeCSS(), яка спрацьовуватиме по кліку на кнопку і змінюватиме стиль вмісту тега <p>:
 //  колір шрифту – оранжевий, розмір шрифту 20px, шрифт сімейства "Comic Sans MS".
 
