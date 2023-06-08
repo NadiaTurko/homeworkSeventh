@@ -9,7 +9,7 @@
 //         3) із затримкою 2 сек перемістіть вікно в точку з координатами (200, 200)
 //         4) із затримкою 2 сек закрийте вікно.
 let newWindow = window.open("", "", "width=300,height=300");
-const changeResize = setTimeout(() => {
+const changeWindow = setTimeout(() => {
   newWindow.resizeTo(500, 500);
   const changeMove = setTimeout(() => {
     newWindow.moveTo(200, 200);
@@ -19,7 +19,14 @@ const changeResize = setTimeout(() => {
   }, 2000);
 }, 2000);
 
-changeResize();
+changeWindow();
+
+
+const changeResize = setTimeout(() => newWindow.resizeTo(500, 500), 2000);
+const changeMove = setTimeout(() => newWindow.moveTo(200, 200), 2000);
+const closeWindow = setTimeout(() => newWindow.close(), 2000);
+
+
 
 // 7-2.
 // Для заданої HTML-сторінки:
