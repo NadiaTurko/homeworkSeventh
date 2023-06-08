@@ -22,10 +22,22 @@ const changeWindow = setTimeout(() => {
 changeWindow();
 
 
-const changeResize = setTimeout(() => newWindow.resizeTo(500, 500), 2000);
-const changeMove = setTimeout(() => newWindow.moveTo(200, 200), 2000);
-const closeWindow = setTimeout(() => newWindow.close(), 2000);
+const changeWindow = () =>
+  setTimeout(() => {
+    newWindow.resizeTo(500, 500);
+    changeMove();
+  }, 2000);
+const changeMove = () =>
+  setTimeout(() => {
+    newWindow.moveTo(200, 200);
+    closeWindow();
+  }, 2000);
+const closeWindow = () =>
+  setTimeout(() => {
+    newWindow.close();
+  }, 2000);
 
+changeWindow();
 
 
 // 7-2.
