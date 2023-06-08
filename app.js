@@ -11,13 +11,15 @@
 let newWindow = window.open("", "", "width=300,height=300");
 const changeResize = setTimeout(() => {
   newWindow.resizeTo(500, 500);
-  setTimeout(() => {
+  const changeMove = setTimeout(() => {
     newWindow.moveTo(200, 200);
-    setTimeout(() => {
+    const closeWindow = setTimeout(() => {
       newWindow.close();
     }, 2000);
   }, 2000);
 }, 2000);
+
+changeResize();
 
 // 7-2.
 // Для заданої HTML-сторінки:
