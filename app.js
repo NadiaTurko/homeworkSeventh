@@ -9,19 +9,6 @@
 //         3) із затримкою 2 сек перемістіть вікно в точку з координатами (200, 200)
 //         4) із затримкою 2 сек закрийте вікно.
 let newWindow = window.open("", "", "width=300,height=300");
-const changeWindow = setTimeout(() => {
-  newWindow.resizeTo(500, 500);
-  const changeMove = setTimeout(() => {
-    newWindow.moveTo(200, 200);
-    const closeWindow = setTimeout(() => {
-      newWindow.close();
-    }, 2000);
-  }, 2000);
-}, 2000);
-
-changeWindow();
-
-
 const changeWindow = () =>
   setTimeout(() => {
     newWindow.resizeTo(500, 500);
