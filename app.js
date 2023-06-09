@@ -24,7 +24,7 @@ const closeWindow = () =>
     newWindow.close();
   }, 2000);
 
-changeWindow();
+
 
 
 // 7-2.
