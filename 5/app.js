@@ -5,13 +5,13 @@
 const btn = document.querySelector("button");
 const text = document.querySelector("span");
 btn.addEventListener("click", function (event) {
-  text.innerHTML = "I was pressed!";
+  text.innerHTML += "I was pressed!</br>";
 });
 
 btn.addEventListener("mouseover", function (event) {
-  text.innerHTML = "Mouse on me!";
+  text.innerHTML += "Mouse on me!</br>";
 });
 
 btn.addEventListener("mouseout", function (event) {
-  text.innerHTML = "Mouse is not on me!";
+  text.innerHTML += "Mouse is not on me!</br>";
 });
